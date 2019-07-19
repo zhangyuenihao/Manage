@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="warp">
+    <h3 class="title">请输入您的注册信息</h3>
+    <form action="data/insert.php" method="post" id="infoform">
+        <p><label class="u-lable" for="ID">注册账号:</label><input type="text" name="ID" id="ID"></p>
+        <p><label class="u-lable" for="name">用户名:</label><input type="text" name="name" id="name"></p>
+        <p><label class="u-lable" for="age">年龄:</label><input type="text" name="age" id="age"></p>
+        <p><span class="u-lable">请选择性别:</span>
+            <input type="radio" name="sex" class="sex" id="girl" value="女"><lable for="girl">女</lable>
+            <input type="radio" name="sex" class="sex" id="boy" value="男"><lable for="boy">男</lable>
+        </p>
+        <p><label class="u-lable" for="phone">手机号:</label><input type="text" name="phone" id="phone"></p>
+        <p><label class="u-lable" for="qq">qq号:</label><input type="text" name="qq" id="qq"></p>
+        <p class="sbp"><input type="submit" value="提交" class="submit"></p>
+    </form>
+</div>
+<script src="index.js"></script>
+</body>
