@@ -55,20 +55,21 @@ mysql_select_db("manage");
 //中文
 mysql_query("SET NAMES UTF8");
 //查询
-$sql="SELECT * FROM information";
+//$sql="SELECT * FROM information ORDER BY ID DESC LIMIT 20";倒序
+$sql="SELECT * FROM information ORDER BY ID LIMIT 20";
 //执行
 $result=mysql_query($sql);
 
 //关闭
 mysql_close($conn);
-
 ?>
 <div class="index-warp">
     <h2 class="title">学生管理系统</h2>
     <p class="insertlink"><a href="../index.html">添加用户</a></p>
-    <p class="alluser">全部用户清单</p>
+    <p class="alluser">用户清单(每页20)</p>
     <table>
         <tr>
+            <th></th>
             <th>ID</th>
             <th>用户名</th>
             <th>年龄</th>
@@ -78,9 +79,12 @@ mysql_close($conn);
             <th>删除</th>
         </tr>
         <?php
-            while($row=mysql_fetch_array($result)){
+          $x=0;
+          while($row=mysql_fetch_array($result)){
+           $x++;
         ?>
         <tr>
+            <td class="text"><?php echo $x; ?></td>
             <td class="text"><?php echo $row['ID']; ?></td>
             <td class="text"><?php echo $row['name']; ?></td>
             <td class="text"><?php echo $row['age']; ?></td>

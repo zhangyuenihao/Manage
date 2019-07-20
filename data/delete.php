@@ -60,6 +60,11 @@ mysql_close($conn);
     ?>
     </div>
 </div>
+<script>
+    setTimeout(function () {
+        window.location='http://localhost/Manage/data/index.php'
+    },1000)
 
+</script>
 </body>
 </html>
