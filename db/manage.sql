@@ -11,7 +11,7 @@
  Target Server Version : 50553
  File Encoding         : 65001
 
- Date: 20/07/2019 22:52:10
+ Date: 25/07/2019 13:31:26
 */
 
 SET NAMES utf8mb4;
@@ -61,5 +61,6 @@ INSERT INTO `information` VALUES (1118, '小花', 20, '女', 2147483647, 45546);
 INSERT INTO `information` VALUES (6669, '大幅度发', 15, '男', 2147483647, 7987987);
 INSERT INTO `information` VALUES (5240, '小绿', 15, '女', 2147483647, 45546);
 INSERT INTO `information` VALUES (5551, '你的', 66, '女', 2147483647, 7987987);
+INSERT INTO `information` VALUES (1006, '小花', 15, '女', 2147483647, 45546);
 
 SET FOREIGN_KEY_CHECKS = 1;
